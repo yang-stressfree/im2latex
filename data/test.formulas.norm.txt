@@ -1,6 +1,5 @@
-16+3=
-6-3=
-33-48=
-38+26=
-637+200=
-30+860=
+8 - 3 \times 0 \div a + 4 - 9 \times y \div 7 + z - b \times 2 \div 6 + f - x \times 0 \div e + 5 - 1 =
+c \times 6 \div z + d - 0 \times f \div e + b - 4 \times 2 \div x + 8 - 5 \times 0 \div 7 + 3 - a \times y \div 1 =
+5 \div a + 6 - z \times 0 \div y + 0 - x \times e \div 9 + 8 - b \times 7 =
+e + d =
+8 - 5 \times x \div a + 6 - 0 \times c \div 2 + z - 1 \times 4 \div e + 7 - y \times b \div 0 + 3 - d \times 9 =
