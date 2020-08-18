@@ -63,7 +63,7 @@ input> data/images_test/0.png""")
 
 if __name__ == "__main__":
     # restore config and model
-    dir_output = "results/small/"
+    dir_output = "results/full/"
     config_vocab = Config(dir_output + "vocab.json")
     config_model = Config(dir_output + "model.json")
     vocab = Vocab(config_vocab)
