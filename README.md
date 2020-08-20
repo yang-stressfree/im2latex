@@ -10,7 +10,7 @@ Check the [blog post](https://guillaumegenthial.github.io/image-to-latex.html).
 
 Install python-dev for compiling multiprocessing (because this is a Python2 project), if Ubuntu just run `apt install python-dev`.
 
-Install pdflatex (latex to pdf) and ghostsript + [magick](https://www.imagemagick.org/script/install-source.php
+Install pdflatex (latex to pdf) and ghostscript + [magick](https://www.imagemagick.org/script/install-source.php
 ) (pdf to png) on Linux
 
 
