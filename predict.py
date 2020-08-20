@@ -64,10 +64,14 @@ input> data/images_test/0.png""")
 
 def predict (model):
     if len(sys.argv) <= 1:
-        print ">>> python predict.py abs/path/to/image.png"
+        print "Usage"
+        print "python predict.py abs/path/to/image.png"
         return
     image_path = sys.argv[1]
-    print (">>>"+image_path)
+    img = imread(image_path)
+    img = greyscale(img)
+    hyps = model.predict(img)
+    model.logger.info(hyps[0])
 
 if __name__ == "__main__":
     # restore config and model
