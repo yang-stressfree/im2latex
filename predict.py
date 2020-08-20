@@ -63,8 +63,11 @@ input> data/images_test/0.png""")
         model.logger.info(hyps[0])
 
 def predict (model):
-    imagePath = sys.argv[0]
-    print (">>>"+imagePath)
+    if len(sys.argv) <= 1:
+        print ">>> python predict.py abs/path/to/image.png"
+        return
+    image_path = sys.argv[1]
+    print (">>>"+image_path)
 
 if __name__ == "__main__":
     # restore config and model
