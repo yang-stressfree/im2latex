@@ -71,7 +71,7 @@ def predict (model):
     img = imread(image_path)
     img = greyscale(img)
     hyps = model.predict(img)
-    model.logger.info(hyps[0])
+    model.logger.info(hyps)
 
 if __name__ == "__main__":
     # restore config and model
