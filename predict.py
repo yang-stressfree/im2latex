@@ -1,3 +1,5 @@
+import sys
+
 from scipy.misc import imread
 import PIL
 from PIL import Image
@@ -60,6 +62,9 @@ input> data/images_test/0.png""")
 
         model.logger.info(hyps[0])
 
+def predict (model):
+    imagePath = sys.argv[0]
+    print (">>>"+imagePath)
 
 if __name__ == "__main__":
     # restore config and model
@@ -72,4 +77,5 @@ if __name__ == "__main__":
     model.build_pred()
     model.restore_session(dir_output + "model.weights/")
 
-    interactive_shell(model)
+    # interactive_shell(model)
+    predict(model)
