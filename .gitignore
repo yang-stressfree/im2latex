@@ -17,3 +17,7 @@ tmp/
 ~i_*
 ig_*
 zzzig_*
+
+data/images_*
+data/*.matching.txt
+data/vocab.txt
