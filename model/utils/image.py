@@ -178,8 +178,6 @@ def convert_to_png(formula, dir_output, name, quality=100, density=200,
         $$ \mathsf{3x^2 \in R \subset Q} $$
         \\
         $$ \mathtt{3x^2 \in R \subset Q} $$
-        \\
-        $$ \mathbb{3x^2 \in R \subset Q} $$
     \end{large}
     \end{document}""" % (formula, formula))
 
