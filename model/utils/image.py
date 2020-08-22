@@ -163,7 +163,7 @@ def convert_to_png(formula, dir_output, name, quality=100, density=200,
     \newcommand*{\myfont}{\fontfamily{antt}\selectfont}
     \begin{document}
         $$ %s $$
-        {\myfont $$ %s $$}
+        {\myfont %s}
         {\myfont degas}
     \end{document}""" % (formula, formula))
 
