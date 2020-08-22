@@ -164,7 +164,7 @@ def convert_to_png(formula, dir_output, name, quality=100, density=200,
     \begin{large}
         $$  %s $$
         $$ %s $$
-        $$ 3x^2 \in R \subset Q \lim_{x \to 0} f(x) = 8 \dpi{400}\alpha + \frac{2\beta}{\gamma} $$
+        $$ 3x^2 \in R \subset Q ;\hspace{.5cm} \lim_{x \to 0} f(x) = 8 ;\hspace{.5cm} \alpha + \frac{2\beta}{\gamma}. $$
         $$ \mathnormal{3x^2 \in R \subset Q} $$
         $$ \mathrm{3x^2 \in R \subset Q} $$
         $$ \mathit{3x^2 \in R \subset Q} $$
