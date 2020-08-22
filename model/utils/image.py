@@ -163,7 +163,7 @@ def convert_to_png(formula, dir_output, name, quality=100, density=200,
     \usepackage[T1]{fontenc}
     \usepackage{lxfonts}
     \begin{document}
-        {\bfseries $$ %s $$}
+        $$ %s $$
         {\slshape $$ %s $$}
     \end{document}""" % (formula, formula))
 
