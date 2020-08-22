@@ -160,9 +160,12 @@ def convert_to_png(formula, dir_output, name, quality=100, density=200,
     with open(dir_output + "{}.tex".format(name), "w") as f:
         f.write(
     r"""\documentclass[preview]{standalone}
+    \begin{document}
 \usepackage[light,condensed,math]{anttor}
 \usepackage[T1]{fontenc}
-    \begin{document}
+        $$ %s $$
+\usepackage[light,math]{kurier}
+\usepackage[T1]{fontenc}
         $$ %s $$
     \end{document}""" % (formula))
 
