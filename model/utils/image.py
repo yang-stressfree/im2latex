@@ -162,7 +162,7 @@ def convert_to_png(formula, dir_output, name, quality=100, density=200,
     r"""\documentclass[preview]{standalone}
     \begin{document}
         \fontfamily{anttbold}\selectfont $$ %s $$
-        $$ %s $$
+        \fontfamily{llcmss}\selectfont $$ %s $$
     \end{document}""" % (formula, formula))
 
     # call pdflatex to create pdf
