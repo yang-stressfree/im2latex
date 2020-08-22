@@ -159,7 +159,7 @@ def convert_to_png(formula, dir_output, name, quality=100, density=200,
     # write formula into a .tex file
     with open(dir_output + "{}.tex".format(name), "w") as f:
         f.write(
-    r"""\documentclass{standalone}
+    r"""\documentclass[preview]{standalone}
     \begin{document}
     \begin{large}
         $$  %s $$
@@ -178,6 +178,8 @@ def convert_to_png(formula, dir_output, name, quality=100, density=200,
         $$ \mathsf{3x^2 \in R \subset Q} $$
         \\
         $$ \mathtt{3x^2 \in R \subset Q} $$
+        \\
+        $$ \mathbb{3x^2 \in R \subset Q} $$
     \end{large}
     \end{document}""" % (formula, formula))
 
