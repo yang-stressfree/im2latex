@@ -160,11 +160,10 @@ def convert_to_png(formula, dir_output, name, quality=100, density=200,
     with open(dir_output + "{}.tex".format(name), "w") as f:
         f.write(
     r"""\documentclass[preview]{standalone}
-    \usepackage[T1]{fontenc}
-    \usepackage{lxfonts}
+    \newcommand*{\myfont}{\fontfamily{antt}\selectfont}
     \begin{document}
         $$ %s $$
-        {\slshape $$ %s $$}
+        {\myfont $$ %s $$}
     \end{document}""" % (formula, formula))
 
     # call pdflatex to create pdf
