@@ -163,6 +163,7 @@ def convert_to_png(formula, dir_output, name, quality=100, density=200,
     \newcommand*{\fta}{\fontfamily{antt}\selectfont}
     \newcommand*{\ftb}{\fontfamily{iwona}\selectfont}
     \begin{document}
+    \begin{large}
         $$ {\fta %s} $$
         \\
         $$ {\ftb %s} $$
@@ -173,6 +174,7 @@ def convert_to_png(formula, dir_output, name, quality=100, density=200,
 \mathbf{3x^2 \in R \subset Q} \\
 \mathsf{3x^2 \in R \subset Q} \\
 \mathtt{3x^2 \in R \subset Q} 
+    \end{large}
     \end{document}""" % (formula, formula))
 
     # call pdflatex to create pdf
