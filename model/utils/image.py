@@ -160,13 +160,11 @@ def convert_to_png(formula, dir_output, name, quality=100, density=200,
     with open(dir_output + "{}.tex".format(name), "w") as f:
         f.write(
     r"""\documentclass[preview]{standalone}
-    \newcommand*{\fta}{\fontfamily{antt}\selectfont}
-    \newcommand*{\ftb}{\fontfamily{iwona}\selectfont}
     \begin{document}
     \begin{large}
-        $$ {\fta %s} $$
+        $$ %s $$
         \\
-        $$ {\ftb %s} $$
+        $$ %s $$
         3x^2 \in R \subset Q \\
 \mathnormal{3x^2 \in R \subset Q} \\
 \mathrm{3x^2 \in R \subset Q} \\
