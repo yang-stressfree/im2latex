@@ -160,13 +160,12 @@ def convert_to_png(formula, dir_output, name, quality=100, density=200,
     with open(dir_output + "{}.tex".format(name), "w") as f:
         f.write(
     r"""\documentclass[preview]{standalone}
-    \begin{document}
+\usepackage[light,math]{kurier}
 \usepackage[light,condensed,math]{anttor}
 \usepackage[T1]{fontenc}
-        $$ %s $$
-\usepackage[light,math]{kurier}
-\usepackage[T1]{fontenc}
-        $$ %s $$
+    \begin{document}
+        \fontfamily{anttor}\selectfont $$ %s $$
+        \fontfamily{kurier}\selectfont $$ %s $$
     \end{document}""" % (formula, formula))
 
     # call pdflatex to create pdf
