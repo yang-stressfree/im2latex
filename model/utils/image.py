@@ -160,7 +160,8 @@ def convert_to_png(formula, dir_output, name, quality=100, density=200,
     with open(dir_output + "{}.tex".format(name), "w") as f:
         f.write(
     r"""\documentclass[preview]{standalone}
-\usepackage{gentium}
+\usepackage[light,condensed,math]{anttor}
+\usepackage[T1]{fontenc}
     \begin{document}
         $$ %s $$
     \end{document}""" % (formula))
