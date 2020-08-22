@@ -165,15 +165,19 @@ def convert_to_png(formula, dir_output, name, quality=100, density=200,
         $$ %s $$
         \\
         $$ %s $$
-        $$
-        3x^2 \in R \subset Q \\
-\mathnormal{3x^2 \in R \subset Q} \\
-\mathrm{3x^2 \in R \subset Q} \\
-\mathit{3x^2 \in R \subset Q} \\
-\mathbf{3x^2 \in R \subset Q} \\
-\mathsf{3x^2 \in R \subset Q} \\
-\mathtt{3x^2 \in R \subset Q} 
-        $$
+        $$ 3x^2 \in R \subset Q $$
+        \\
+        $$ \mathnormal{3x^2 \in R \subset Q} $$
+        \\
+        $$ \mathrm{3x^2 \in R \subset Q} $$
+        \\
+        $$ \mathit{3x^2 \in R \subset Q} $$
+        \\
+        $$ \mathbf{3x^2 \in R \subset Q} $$
+        \\
+        $$ \mathsf{3x^2 \in R \subset Q} $$
+        \\
+        $$ \mathtt{3x^2 \in R \subset Q} $$
     \end{large}
     \end{document}""" % (formula, formula))
 
