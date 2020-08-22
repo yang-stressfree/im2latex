@@ -165,12 +165,12 @@ def convert_to_png(formula, dir_output, name, quality=100, density=200,
         $$  %s $$
         $$ %s $$
         $$ 3x^2 \in R \subset Q ;\hspace{.5cm} \lim_{x \to 0} f(x) = 8 ;\hspace{.5cm} \alpha + \frac{2\beta}{\gamma}. $$
-        $$ \mathnormal{3x^2 \in R \subset Q} $$
-        $$ \mathrm{3x^2 \in R \subset Q} $$
-        $$ \mathit{3x^2 \in R \subset Q} $$
-        $$ \mathbf{3x^2 \in R \subset Q} $$
-        $$ \mathsf{3x^2 \in R \subset Q} $$
-        $$ \mathtt{3x^2 \in R \subset Q} $$
+        $$ \mathnormal{3x^2 \in R \subset Q ;\hspace{.5cm} \lim_{x \to 0} f(x) = 8 ;\hspace{.5cm} \alpha + \frac{2\beta}{\gamma}.} $$
+        $$ \mathrm{3x^2 \in R \subset Q ;\hspace{.5cm} \lim_{x \to 0} f(x) = 8 ;\hspace{.5cm} \alpha + \frac{2\beta}{\gamma}.} $$
+        $$ \mathit{3x^2 \in R \subset Q ;\hspace{.5cm} \lim_{x \to 0} f(x) = 8 ;\hspace{.5cm} \alpha + \frac{2\beta}{\gamma}.} $$
+        $$ \mathbf{3x^2 \in R \subset Q ;\hspace{.5cm} \lim_{x \to 0} f(x) = 8 ;\hspace{.5cm} \alpha + \frac{2\beta}{\gamma}.} $$
+        $$ \mathsf{3x^2 \in R \subset Q ;\hspace{.5cm} \lim_{x \to 0} f(x) = 8 ;\hspace{.5cm} \alpha + \frac{2\beta}{\gamma}.} $$
+        $$ \mathtt{3x^2 \in R \subset Q ;\hspace{.5cm} \lim_{x \to 0} f(x) = 8 ;\hspace{.5cm} \alpha + \frac{2\beta}{\gamma}.} $$
     \end{large}
     \end{document}""" % (formula, formula))
 
