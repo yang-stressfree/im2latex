@@ -167,7 +167,7 @@ def convert_to_png(formula, dir_output, name, quality=100, density=200,
 \usepackage[light,math]{kurier}
 \usepackage[T1]{fontenc}
         $$ %s $$
-    \end{document}""" % (formula) % (formula))
+    \end{document}""" % (formula, formula))
 
     # call pdflatex to create pdf
     run("pdflatex -interaction=nonstopmode -output-directory={} {}".format(
