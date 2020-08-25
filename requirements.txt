@@ -1,5 +1,5 @@
 tensorflow==1.15
-numpy
+numpy==1.16.0
 scipy
 nltk==3.2.5
 pillow
@@ -8,3 +8,5 @@ logging
 multiprocessing
 six
 click
+nose
+tornado
