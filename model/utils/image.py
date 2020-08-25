@@ -155,7 +155,10 @@ def convert_to_png(formula, dir_output, name, quality=100, density=200,
 
     """
     tex_name = name + "_" + str(font)
-    temp = ""
+    temp = r"""\documentclass[preview]{standalone}
+            \begin{document}
+            \begin{large}
+                $$ """
     # \mathnormal
     # \mathrm
     # \mathit
@@ -163,24 +166,15 @@ def convert_to_png(formula, dir_output, name, quality=100, density=200,
     # \mathsf
     # \mathtt
     if font == 0:
-        temp = r"""\documentclass[preview]{standalone}
-            \begin{document}
-                $$ %s $$
-            \end{document}"""
+        temp += r"""%s"""
     if font == 1:
-        temp = r"""\documentclass[preview]{standalone}
-            \begin{document}
-                $$ \mathbf{%s} $$
-            \end{document}"""
+        temp += r"""\mathbf{%s}"""
     if font == 2:
-        temp = r"""\documentclass[preview]{standalone}
-            \begin{document}
-                $$ \mathsf{%s} $$
-            \end{document}"""
+        temp += r"""\mathsf{%s}"""
     if font == 3:
-        temp = r"""\documentclass[preview]{standalone}
-            \begin{document}
-                $$ \mathtt{%s} $$
+        temp += r"""\mathtt{%s}"""
+    temp += r""" $$
+            \end{large}
             \end{document}"""
     # write formula into a .tex file
     with open(dir_output + "{}.tex".format(tex_name), "w") as f:
