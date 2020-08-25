@@ -1,1 +1,1 @@
-0123456789 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ
+23x^{(x+y)^7}+129z=z
