@@ -30,9 +30,9 @@ def main(data, vocab):
         path_matching=data_config.path_matching_val)
 
     # produce images and matching files
-    train_set.build(buckets=data_config.buckets, fontIndex=0, fontLength=10)
-    test_set.build(buckets=data_config.buckets, fontIndex=4, fontLength=4)
-    val_set.build(buckets=data_config.buckets, fontIndex=4, fontLength=2)
+    train_set.build(buckets=data_config.buckets, fontIndex=4, fontLength=3)
+    test_set.build(buckets=data_config.buckets, fontIndex=4, fontLength=1)
+    val_set.build(buckets=data_config.buckets, fontIndex=4, fontLength=1)
 
     # vocab
     vocab_config = Config(vocab)

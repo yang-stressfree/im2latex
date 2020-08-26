@@ -173,18 +173,13 @@ def convert_to_png(formula, dir_output, name, quality=100, density=200,
         temp += r"""\mathsf{%s}"""
     if font == 3:
         temp += r"""\mathtt{%s}"""
+
     if font == 4:
         temp += r"""\mathrm{%s}"""
     if font == 5:
         temp += r"""\mathit{%s}"""
-    if font == 6:
-        temp += r"""\mathbb{%s}"""
-    if font == 7:
-        temp += r"""\mathbi{%s}"""
     if font == 8:
         temp += r"""\mathnormal{%s}"""
-    if font == 9:
-        temp += r"""\mathpzc{%s}"""
     temp += r""" $$
             \end{large}
             \end{document}"""
