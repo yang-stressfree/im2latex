@@ -160,11 +160,11 @@ def convert_to_png(formula, dir_output, name, quality=100, density=200,
             \begin{large}
                 $$ """
     # \mathnormal
-    # \mathrm
-    # \mathit
-    # \mathbf
-    # \mathsf
-    # \mathtt
+    # \mathrm v
+    # \mathit v
+    # \mathbf t
+    # \mathsf t
+    # \mathtt t
     if font == 0:
         temp += r"""%s"""
     if font == 1:
@@ -173,6 +173,10 @@ def convert_to_png(formula, dir_output, name, quality=100, density=200,
         temp += r"""\mathsf{%s}"""
     if font == 3:
         temp += r"""\mathtt{%s}"""
+    if font == 4:
+        temp += r"""\mathrm{%s}"""
+    if font == 5:
+        temp += r"""\mathit{%s}"""
     temp += r""" $$
             \end{large}
             \end{document}"""
@@ -223,7 +227,7 @@ def build_image(item):
 
 
 def build_images(formulas, dir_images, quality=100, density=200, down_ratio=2,
-                 buckets=None, n_threads=16):
+                 buckets=None, n_threads=16, fontIndex=0, fontLength=4):
     """Parallel procedure to produce images from formulas
 
     If some of the images have already been produced, does not recompile them.
@@ -241,7 +245,8 @@ def build_images(formulas, dir_images, quality=100, density=200, down_ratio=2,
 
     pool = Pool(n_threads)
     result = pool.map(build_image, [(idx, form, dir_images, quality, density, down_ratio, buckets, font)
-                                    for font in range(0, 4) for idx, form in formulas.items()])
+                                    for font in range(fontIndex, fontIndex + fontLength) for idx, form in
+                                    formulas.items()])
     pool.close()
     pool.join()
 

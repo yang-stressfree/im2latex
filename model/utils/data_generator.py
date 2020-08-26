@@ -218,7 +218,7 @@ class DataGenerator(object):
 
 
     def build(self, quality=100, density=200, down_ratio=2, buckets=None,
-                n_threads=4):
+              n_threads=16, fontIndex=0, fontLength=4):
         """Generates images from the formulas and writes the correspondance
         in the matching file.
 
@@ -233,7 +233,7 @@ class DataGenerator(object):
         # 1. produce images
         init_dir(self._dir_images)
         result = build_images(self._formulas, self._dir_images, quality,
-                density, down_ratio, buckets, n_threads)
+                              density, down_ratio, buckets, n_threads, fontIndex, fontLength)
 
         # 2. write matching with same convention of naming
         with open(self._path_matching, "w") as f:
