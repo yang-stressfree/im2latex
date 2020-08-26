@@ -30,7 +30,7 @@ def main(data, vocab):
         path_matching=data_config.path_matching_val)
 
     # produce images and matching files
-    train_set.build(buckets=data_config.buckets, fontIndex=0, fontLength=9)
+    train_set.build(buckets=data_config.buckets, fontIndex=0, fontLength=10)
     test_set.build(buckets=data_config.buckets, fontIndex=4, fontLength=4)
     val_set.build(buckets=data_config.buckets, fontIndex=4, fontLength=2)
 
