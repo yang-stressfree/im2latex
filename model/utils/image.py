@@ -183,6 +183,8 @@ def convert_to_png(formula, dir_output, name, quality=100, density=200,
         temp += r"""\mathbi{%s}"""
     if font == 8:
         temp += r"""\mathnormal{%s}"""
+    if font == 9:
+        temp += r"""\mathpzc{%s}"""
     temp += r""" $$
             \end{large}
             \end{document}"""
