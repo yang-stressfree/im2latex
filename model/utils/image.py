@@ -177,6 +177,12 @@ def convert_to_png(formula, dir_output, name, quality=100, density=200,
         temp += r"""\mathrm{%s}"""
     if font == 5:
         temp += r"""\mathit{%s}"""
+    if font == 6:
+        temp += r"""\mathcal{%s}"""
+    if font == 7:
+        temp += r"""\mathbb{%s}"""
+    if font == 8:
+        temp += r"""\mathbi{%s}"""
     temp += r""" $$
             \end{large}
             \end{document}"""

@@ -31,7 +31,7 @@ def main(data, vocab):
 
     # produce images and matching files
     train_set.build(buckets=data_config.buckets, fontIndex=0, fontLength=4)
-    test_set.build(buckets=data_config.buckets, fontIndex=4, fontLength=2)
+    test_set.build(buckets=data_config.buckets, fontIndex=4, fontLength=5)
     val_set.build(buckets=data_config.buckets, fontIndex=4, fontLength=2)
 
     # vocab
