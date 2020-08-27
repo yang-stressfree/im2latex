@@ -266,7 +266,10 @@ class Img2SeqModel(BaseModel):
             hyps = [[] for i in range(self._config.beam_size)]
 
         fd = self._get_feed_dict(images, training=False, dropout=1)
+        print ids_eval
+        
         ids_eval, = self.sess.run([self.pred_test.ids], feed_dict=fd)
+        print ids_eval
 
         if self._config.decoding == "greedy":
             ids_eval = np.expand_dims(ids_eval, axis=1)
