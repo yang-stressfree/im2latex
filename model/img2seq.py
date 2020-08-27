@@ -274,6 +274,8 @@ class Img2SeqModel(BaseModel):
         elif self._config.decoding == "beam_search":
             ids_eval = np.transpose(ids_eval, [0, 2, 1])
 
+        print vars(ids_eval)
+
         for preds in ids_eval:
             for i, pred in enumerate(preds):
                 p = truncate_end(pred, self._vocab.id_end)

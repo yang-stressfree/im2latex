@@ -62,6 +62,11 @@ input> data/images_test/0.png""")
 
 
 def predict(trained_model):
+    """
+
+    Args:
+        trained_model (Img2SeqModel):
+    """
     if len(sys.argv) <= 1:
         print "Usage"
         print "python predict.py abs/path/to/image.png"
