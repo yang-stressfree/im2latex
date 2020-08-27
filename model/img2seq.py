@@ -268,7 +268,7 @@ class Img2SeqModel(BaseModel):
         fd = self._get_feed_dict(images, training=False, dropout=1)
         print fd
 
-        ids_eval, r_tuple, a = self.sess.run([self.pred_test.ids], feed_dict=fd)
+        ids_eval, r_tuple, = self.sess.run([self.pred_test.ids], feed_dict=fd)
         print ids_eval
         print r_tuple
 
