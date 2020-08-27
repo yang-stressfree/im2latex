@@ -275,6 +275,7 @@ class Img2SeqModel(BaseModel):
             ids_eval = np.expand_dims(ids_eval, axis=1)
 
         elif self._config.decoding == "beam_search":
+            print "beam_search"
             ids_eval = np.transpose(ids_eval, [0, 2, 1])
 
         print ids_eval
