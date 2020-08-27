@@ -266,8 +266,8 @@ class Img2SeqModel(BaseModel):
             hyps = [[] for i in range(self._config.beam_size)]
 
         fd = self._get_feed_dict(images, training=False, dropout=1)
-        print ids_eval
-        
+        print fd
+
         ids_eval, = self.sess.run([self.pred_test.ids], feed_dict=fd)
         print ids_eval
 
